@@ -1,0 +1,111 @@
+:root{
+    --main-color: #1F3F2B;
+    --background-color: #E9F3E5;
+    --section-padding: 60px;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    direction: rtl;
+}
+.navbar .container-fluid img{
+    width: 100px;
+}
+.navbar{
+    background-color: var(--background-color);
+}
+.navbar .container-fluid .collapse ul li a{
+    padding-left: 2rem ;
+}
+.navbar .container-fluid .collapse ul li a:hover,
+.navbar .container-fluid .collapse ul li a.active{
+    color: var(--main-color);
+    font-weight: 700;
+}
+.navbar .navbar-toggler{
+    font-size: 2.5rem;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    color: var(--main-color);
+}
+.landing-section{
+    background-color: var(--background-color);
+    height: calc(100vh - 126px);
+    color: var(--main-color);
+}
+.landing-section .text-center h1{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.landing-section .text-center p{
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+}
+@media (max-width:500px){
+    .landing-section .text-center p{
+        font-size: 1.8rem;
+    }
+}
+.landing-section .text-center button{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+.landing-section .text-center button:hover{
+    color: #bae6ca92;
+}
+.features-section{
+    margin-top: var(--section-padding);
+    margin-bottom: var(--section-padding);
+}
+.main-head h2{
+    font-size: 8rem;
+    color: #1f3f2b7e;
+    font-weight: 900;
+}
+.main-head p{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 700;
+    margin-top: -40px;
+}
+.main-head{
+    margin-bottom: 100px;
+}
+.features-section .container .feature{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 40px;
+}
+.features-section .container .feature .box {
+    padding: 30px;
+    border-color: var(--background-color);
+    box-shadow: 0px 0px 10px var(--main-color);    
+}
+.features-section .container .feature .box svg{
+    color: var(--main-color);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.features-section .container .feature .box h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.features-section .container .feature .box p{
+    font-size: 1.6rem;
+    color: #1f3f2bac;
+}
+.features-section .container .feature .box:hover{
+    background-color: var(--background-color);
+}
+.student-section{
+    margin-top: var(--section-padding);
+    margin-bottom: var(--section-padding);
+}
+.student-section table tr td{
+    font-size: 1.5rem;
+}
