@@ -7,12 +7,11 @@
 }
 :root{
     --main-color: #1F3F2B ;
-    --background-color: #F4EEDF;
+    --background-color: #E9F3E5;
 }
 header{
     display: flex;
     padding: 20px;
-    /* justify-content: space-around; */
     background-color: var(--background-color);
 }
 header .image {
@@ -25,14 +24,83 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 144px);
+    height: calc(100vh - 196px);
 }
-main form{
+main .login-form{
     border: 2px solid #1F3F2B;
     width: 400px;
-    height: 400px;
+    height: 520px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     border-radius: 10px;
+    position: relative;
+    padding: 10px;
+}
+@media (min-width:760px) {
+    main .login-form{
+            width: 620px;
+    }
+}
+
+main .login-form >:first-child{
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    border-bottom: 2px solid var(--main-color);
+    width: 100%;
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--background-color);
+}
+main .login-form form {
+    margin-top: 120px;
+    height: calc(100% - 103px);
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+main .login-form form div{
+    padding-bottom: 30px;
+}
+main .login-form form div label{
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+main .login-form form >:last-child{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+main .login-form form div:not(:last-child) input{
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+main .login-form form div:not(:last-child) input:focus{
+    box-shadow: 0px 0px 10px rgb(5, 98, 5);
+    border-color: rgb(5, 98, 5);
+}
+main .login-form form p{
+    color: red;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+footer{
+    background-color: var(--main-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 1.5rem;
+    margin: 0px;
+    color: white;
 }
