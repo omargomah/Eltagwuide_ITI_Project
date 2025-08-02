@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تسجيل الدخول</title>
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="stylesheet" href="../CSS/all.min.css">
     <link rel="stylesheet" href="../CSS/LoginStyle.css">
@@ -13,25 +15,32 @@
             <div class="image">
                 <img src="../Images/Logo.png" alt="Logo">
             </div>
-            <!-- <div class="text">
-                <h1>تسجيل الدخول</h1>
-            </div> -->
         </header>
         <main>
-            <form action="" method="post" target="_self">
-                <div class="email-input">
-                    <label for="email">Email</label>
-                    <input type="email" autofocus id="email" name="email">
+            <div class="login-form">
+                <div class="text">
+                    <h1>تسجيل الدخول</h1>
                 </div>
-                <div class="email-input">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <input type="submit">
-            </form>
+                <form target="_blank" method="post">
+                    <div class="email-input">
+                        <label for="email" class="form-label">البريد</label>
+                        <input type="email" class="form-control" autofocus id="email" name="email">
+                    </div>
+                    <div class="email-input">
+                        <label class="form-label" for="password">كلمة السر</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <p></p>
+                    <input class="btn btn-success" type="submit" value="تسجيل">
+                </form>
+            </div>
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
         </main>
-        <footer>
-            <p></p>
-        </footer>
+    <footer>
+        <p>© <span></span> - All Right Reserved</p>
+    </footer>
+    <script src="../JS/all.min.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="/JS/LoginPage.js"></script>
     </body>
 </html>
