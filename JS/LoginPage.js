@@ -1,7 +1,7 @@
 let date = new Date();
 let footerYear = document.querySelector('footer p span');
 footerYear.innerText = `${date.getFullYear()}`
-if (localStorage.getItem('id')) {
+if(localStorage.getItem('id')) {
     alert('You are already logged in.');
     document.location.href = '/Html/Home.html';
 }
