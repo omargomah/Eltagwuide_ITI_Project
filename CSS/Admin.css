@@ -32,6 +32,35 @@ body{
     box-shadow: none;
     color: var(--main-color);
 }
+
+.add-lesson{
+    padding-top: var(--section-padding);
+}
+
+.add-lesson .button button,
+.add-lesson :last-child button {
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.add-lesson form label{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.add-lesson form input{
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+
+.add-lesson form input:focus,
+.add-lesson form textarea:focus{
+    box-shadow: 0px 0px 10px rgb(5, 98, 5);
+    border-color: rgb(5, 98, 5);
+}
+
+
 .student-statistics p{
     margin-bottom: 10px;
     font-size: 2rem;
@@ -67,3 +96,5 @@ footer p{
     margin: 0px;
     color: white;
 }
+
+

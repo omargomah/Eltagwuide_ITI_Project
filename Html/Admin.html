@@ -17,8 +17,54 @@
             <img class="navbar-brand d-blok" src="../Images/Logo.png" alt="logo"/>
         </div>
     </nav>
+    <div class="alert alert-success text-center fs-1 fw-bold d-none" role="alert">
+        تم أضافة الدرس بنجاح
+    </div>
+    <div class="add-lesson container">
+        <div class="button text-center">
+            <button class="btn btn-success">أضافة درس جديد</button>
+        </div>
+        <form method="post" class="row g-3 d-none">
+            <div class="col-md-12">
+                <label for="titel" class="form-label">عنوان الدرس</label>
+                <input type="text" class="form-control" id="titel">
+            </div>
+            <div class="col-12">
+                <label for="content" class="form-label">محتوى الدرس</label>
+                <textarea class="form-control" cols="12" rows ="12" name="content" id="content"></textarea>
+            </div>
+            <div class="col-8">
+                <label for="question1" class="form-label">السؤال الأول</label>
+                <input type="text" class="form-control" id="question1">
+            </div>
+            <div class="col-md-4">
+                <label for="degree1" class="form-label">درجة السؤال</label>
+                <input type="number" min="0" max="20" class="form-control" id="degree1" name="degree1">
+            </div>
+            <div class="col-8">
+                <label for="question2" class="form-label">السؤال الثانى</label>
+                <input type="text" class="form-control" id="question2">
+            </div>
+            <div class="col-md-4">
+                <label for="degree2" class="form-label">درجة السؤال</label>
+                <input type="number" min="0" max="20" class="form-control" id="degree2" name="degree2">
+            </div>
+            <div class="col-8">
+                <label for="question3" class="form-label">السؤال الثالث</label>
+                <input type="text" class="form-control" id="question3">
+            </div>
+            <div class="col-md-4">
+                <label for="degree3" class="form-label">درجة السؤال</label>
+                <input type="number" min="0" max="20" class="form-control" id="degree3" name="degree3">
+            </div>
+            <p class="fs-2 fw-bold text-danger mt-3 d-none">يجب أدخال كل الدخل المطلوب</p>
+            <div class="col-12 text-center mt-5 ">
+                <button class="btn px-5 btn-success">ضيف</button>
+            </div>
+        </form>
+    </div>
     <div class="student-statistics container" >
-        <p>Studebts Statistics</p>
+        <p>أحصائيات الطلاب الجدد</p>
         <canvas id="myChart"></canvas>
     </div>
     <div class="student-section container">
