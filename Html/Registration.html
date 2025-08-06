@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل حساب جديد</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/RegisterStyle.css">
+</head>
+<body>
+    <header>
+        <div class="image">
+            <img src="../Images/Logo.png" alt="Logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="register-form">
+            <div class="text">
+                <h1>تسجيل حساب جديد</h1>
+            </div>
+            <form target="_blank" method="post">
+                <div class="user-input">
+                    <label for="name" class="form-label">الاسم</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="user-input">
+                    <label for="country" class="form-label">البلد</label>
+                    <select id="country" class="form-control" required>
+                        <option value="">اختر بلدك</option>
+                    </select>
+                </div>
+                <div class="user-input">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="user-input">
+                    <label for="phone" class="form-label">رقم الهاتف</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="user-input">
+                    <label for="password" class="form-label">كلمة السر</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="user-input">
+                    <label for="confirm-password" class="form-label">تأكيد كلمة السر</label>
+                    <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                </div>
+                <p></p>
+                <input class="btn btn-success" type="submit" value="تسجيل">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span></span> - All Right Reserved</p>
+    </footer>
+
+    <script src="../JS/all.min.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="/JS/RegisterPage.js"></script>
+</body>
+</html>
