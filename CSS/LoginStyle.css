@@ -13,6 +13,7 @@ header{
     display: flex;
     padding: 20px;
     background-color: var(--background-color);
+    justify-content: center;
 }
 header .image {
     width: 100px;
