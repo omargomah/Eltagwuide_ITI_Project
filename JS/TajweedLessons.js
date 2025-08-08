@@ -36,3 +36,6 @@ function markAsDone(button) {
   });
 });
 
+let date = new Date();
+let footerYear = document.querySelector('footer p span');
+footerYear.innerText = `${date.getFullYear()}`
