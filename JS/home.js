@@ -21,7 +21,8 @@ window.onload =  getTopStudents;
 
 let logout = document.querySelector('.navbar .container-fluid .collapse ul li:nth-child(2) a')
 let login = document.querySelector('.navbar .container-fluid .collapse ul li:nth-child(1) a')
-let MyPage = document.querySelector('.navbar .container-fluid .collapse ul li:nth-child(5) a')
+let contentPage = document.querySelector('.navbar .container-fluid .collapse ul li:nth-child(4) a')
+let StartButton = document.querySelector('.landing-section button')
 let ErrorMessage = document.querySelector('.alert')
 logout.onclick = function(){
     localStorage.removeItem('id')
@@ -38,7 +39,8 @@ login.onclick = function(ev){
             document.location.href = '/Html/Login.html';
     }
 }
-MyPage.onclick = function(ev){
+
+contentPage.onclick = function(ev){
     ev.preventDefault();
     if(!localStorage.getItem('id')){
         ErrorMessage.innerText=`يجب أن تقوم بتسجيل الدخول أولا لعرض صفحتك`
@@ -47,9 +49,17 @@ MyPage.onclick = function(ev){
             ErrorMessage.classList.add('d-none')
         },4000)
     }else{
-        console.log('MyPage')
-            // document.location.href = '/Html/Login.html';
+        location.href='/Html/TajweedLessons.html';
     }
 }
-
-
+StartButton.onclick = function(){
+    if(!localStorage.getItem('id')){
+        ErrorMessage.innerText=`يجب أن تقوم بعمل حساب جديد و أذا كان لديك حساب قديم سجل الدخول مباشرة`
+        ErrorMessage.classList.remove('d-none')
+        setTimeout(()=>{
+            ErrorMessage.classList.add('d-none')
+        },4000)
+    }else{
+        location.href='/Html/TajweedLessons.html';
+    }
+}

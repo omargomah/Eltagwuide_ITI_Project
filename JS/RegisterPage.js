@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.addEventListener("submit", (e) => {
         errorParagraph.textContent = ""; 
-
         const email = emailInput.value.trim().toLowerCase();
         const password = passwordInput.value.trim();
         const confirmPassword = confirmPasswordInput.value.trim();
@@ -59,5 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
             errorParagraph.textContent = "هذا البريد الإلكتروني مسجل مسبقًا.";
             return;
         }
+        window.location.href = '/Html/Home.html';
+        e.preventDefault();
     });
 });
+
+let date = new Date();
+let footerYear = document.querySelector('footer p span');
+footerYear.innerText = `${date.getFullYear()}`
