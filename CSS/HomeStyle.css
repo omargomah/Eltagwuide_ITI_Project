@@ -11,6 +11,21 @@ body{
     font-family: "Roboto", sans-serif;
     direction: rtl;
 }
+.main-head h2{
+    font-size: 8rem;
+    color: #1f3f2b7e;
+    font-weight: 900;
+}
+.main-head p{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 700;
+    margin-top: -40px;
+}
+.main-head{
+    margin-bottom: 100px;
+}
+/* start of header-section */
 .navbar .container-fluid img{
     width: 100px;
 }
@@ -32,6 +47,9 @@ body{
     box-shadow: none;
     color: var(--main-color);
 }
+/* end of header-section */
+
+/* start of Landing-section */
 .landing-section{
     background-color: var(--background-color);
     height: calc(100vh - 126px);
@@ -61,23 +79,12 @@ body{
 .landing-section .text-center button:hover{
     color: #bae6ca92;
 }
+/* end of Landing-section */
+
+/* start of features-section */
 .features-section{
     margin-top: var(--section-padding);
     margin-bottom: var(--section-padding);
-}
-.main-head h2{
-    font-size: 8rem;
-    color: #1f3f2b7e;
-    font-weight: 900;
-}
-.main-head p{
-    font-size: 1.5rem;
-    color: var(--main-color);
-    font-weight: 700;
-    margin-top: -40px;
-}
-.main-head{
-    margin-bottom: 100px;
 }
 .features-section .container .feature{
     display: grid;
@@ -106,6 +113,9 @@ body{
 .features-section .container .feature .box:hover{
     background-color: var(--background-color);
 }
+/* end of features-section */
+
+/* start of student-section */
 .student-section{
     margin-top: var(--section-padding);
     margin-bottom: var(--section-padding);
@@ -113,9 +123,11 @@ body{
 .student-section table tr td{
     font-size: 1.5rem;
 }
+/* end of student-section */
 
+/* start of Services-section */
 .Services-section .content{
-
+    
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(400px , 1fr));
     gap: 20px;
@@ -148,6 +160,69 @@ body{
     padding-bottom:20px ;
     line-height: 1.5;
 }
+/* end of Services-section */
+
+/* start of contact-section */
+
+.contact-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact-section .main-head{
+    margin-bottom: 70px;
+}
+.contact-section .contact{
+    padding-top: var(--padding);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-section  .contact > p{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--main-color);
+    letter-spacing: -2px;
+}
+.contact-section  .contact > a{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--main-color);
+    letter-spacing: -2px;
+    text-decoration: none;
+    margin: 1rem 0;
+    display:block;
+    width: fit-content;
+}
+.contact-section  .contact .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.contact-section  .contact .social-icons a {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+@media (max-width: 768px) {
+    
+    .contact-section .main-head h2{
+        font-size: 6rem;
+    }
+    .contact-section .main-head p{
+        font-size: 1.2rem;
+    }
+    .contact-section  .contact .social-icons p{
+            font-size: 1rem;
+        }
+    .contact-section  .contact .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+/* end of contact-section */
+
+/* start of footer-section */
 footer{
     background-color: var(--main-color);
     padding-top: 10px;
@@ -161,3 +236,4 @@ footer p{
     margin: 0px;
     color: white;
 }
+/* end of footer-section */
