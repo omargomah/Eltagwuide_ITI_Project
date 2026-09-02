@@ -138,9 +138,7 @@ Suggested: MIT (add LICENSE file if you want to open-source under MIT). If you p
 ---
 
 ## Contact
-- Maintainer: omargomah
-- Contact: Eltajweed@gmail.com (as listed in the site contact section)
-
+- Maintainer: Omar Gomaa and Ahmed Elzamly
 ---
 
 ## Try asking (examples)
